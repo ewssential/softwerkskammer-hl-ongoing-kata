@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  app:
+    build: 
+      context: ..
+      dockerfile: Dockerfile
+    volumes:
+      - ../:/app/go
+    command: sleep infinity 
+
+volumes:
+  bash_history:
